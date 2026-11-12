@@ -8,6 +8,5 @@ COPY pom.xml .
 RUN mvn dependency:go-offline
 
 COPY src ./src
-COPY testng.xml .
 
 CMD ["mvn", "clean", "test"]
